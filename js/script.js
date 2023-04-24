@@ -35,7 +35,6 @@ function desencriptar (){
 }
 
 function copiar () {
-    
     navigator.clipboard.writeText(boxMensajes.innerText)
 }
 
