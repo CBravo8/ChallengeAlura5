@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #F3F5FC;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    font-family: 'inter';
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 31.09px;
+    display: block;
+    margin: 15% auto;
+}
+
+.container {
+    margin-top: 90px;
+}
+
+.texto {
+    width: 90%;
+    height: 78%;
+    border:none;
+    background: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.texto::placeholder {
+    color: #0A3871;
+}
+
+.texto:focus{
+    outline: none;
+}
+
+/*Avisos*/
+.aviso {
+    display: flex;
+}
+
+.iconoAviso {
+    display: block;
+    padding: 1%;
+    
+}
+
+.textoAviso {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* Gray/gray-400 */
+    color: #495057;
+}
+
+/*Botones*/
+.botones {
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.btnEncriptar {
+    width: 47%;
+    height: 67px;
+    border-radius: 24px;
+    border: none;
+    background: #0A3871;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btnDesencriptar {
+    width: 47%;
+    height: 67px;
+    border-radius: 24px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 19px;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+/* cuadro mensajes*/
+.rectangulo {
+    height: 85vh;
+    position: relative;
+    border-radius: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    padding: 32px;
+    margin: 7% 5% 0;
+    text-align: center;
+    display: flex;
+    
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.mensajeError1 {
+    margin: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+
+    color: #343A40;
+}
+
+.mensajeError2 {
+    margin: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: center;
+    /* Gray/gray-400 */
+    color:#495057;
+}
+
+#mensajeEncriptado {
+    color: #0A3871;
+    word-wrap: break-word ;
+}
+#mensajeEncriptado p {
+    color: #0A3871;
+    font-size: 32px;
+   
+}
+
+.btnCopiar {
+    width: 100%;
+    padding: 1%;
+    height: 67px;
+    margin-bottom: 8%;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.mostrar{
+    display: block; 
+}
+
+.ocultar {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: block;
+        padding:  3%;
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        margin:  1px auto;
+    }
+
+    #box-logo {
+    position:relative;
+    height: 50px;        
+    }
+
+    .container {
+        margin-top: 70px;
+
+    }
+
+    .texto {
+        margin-left: 20px;
+        font-size: 20px;
+        width: 88%;
+        height: 40vh;
+    }
+
+    .botones {
+        width: 100%;
+    }
+
+    .textoEncriptado {
+        font-size:32px;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .muneco {
+        display:none;
+    }
+
+    .rectangulo {
+        margin: 3% 1%;
+        height: auto;
+    }
+
+    .mensajeError1 {
+        font-size: 24x;
+    }
+
+    .mensajeError2 {
+        font-size: 16px;
+    }
+   
+}
+
+@media screen and (max-width: 375px) {
+    .botones {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .btnEncriptar {
+        width: 90%;
+        margin: 10px 0px;
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .btnDesencriptar {
+        width: 90%;
+        margin: 10px 0px;
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .btnCopiar {
+        font-size: 16px; 
+    }
+
+    .texto {
+        font-size: 35px;
+    }
+
+    .rectangulo {
+        display: flex;
+        align-items: stretch;
+        height: auto;
+
+    }
+
+ 
+
+    #mensajeEncriptado p {
+         font-size: 24px;
+    }
+}

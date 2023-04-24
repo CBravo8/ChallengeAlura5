@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Challenge - Encriptador</title>
+</head>
+<body>
+    <div id="box-logo">
+        <img class="logo" src="imagenes/logo.svg" alt="Logo Alura">
+    </div>
+
+    <div class="container">
+        <textarea id="texto" class="texto" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="aviso">
+            <img class="iconoAviso" src="imagenes/icono.svg" alt="">
+            <p class="textoAviso">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <button id="Encriptar" class="btnEncriptar">Encriptar!</button>
+            <button id="Desencriptar" class="btnDesencriptar">Desencriptar!</button>
+        </div>
+    </div>
+        
+    <aside class="rectangulo">
+        <div class="ocultar box-text ">
+            <div id="mensajeEncriptado" >
+                <p id="mensajeEncriptadoTexto"></p>
+            </div>
+            <!-- <textarea class="textoEncriptado" name="" id="" cols="30" rows="10"></textarea> -->
+            <div id="boxCopiar">
+                <input class="btnCopiar" type="button" value="Copiar" id="Copiar" name="Copiar">
+            </div>
+        </div>
+        
+        <div id="mensajeError" class="error">
+            <img class="muneco" src="imagenes/muneco.svg" alt="">
+            <p class="mensajeError1">Ningún mensaje fue encontrado</p>
+            <p class="mensajeError2">ingresa el texto que desee encriptar o desencriptar</p>
+        </div>
+    </aside>
+    
+    
+</body>
+
+<script src="js/script.js"></script>
+</html>
